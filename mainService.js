@@ -1,5 +1,6 @@
 angular
-  .module('userProfiles').service('mainService', function() {
+  .module('userProfiles')
+  .service('mainService', function() {
     var data = [
       {
         "id": 1,
@@ -22,8 +23,8 @@ angular
     ];
 
 
-    function getUsers() {
-      return this.data;
-    }
+    // function getUsers() {
+    //   return this.data;
+    // }
 
   });
