@@ -4,4 +4,8 @@ angular
 
     $scope.thisAppIsBroken = "This angular app is working";
 
+    $scope.getData = function() {
+      
+    }
+
 });

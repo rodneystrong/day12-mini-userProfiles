@@ -23,4 +23,7 @@ angular
       }
     ];
 
+    this.getUsers = function() {
+      return data;
+    };
 });
