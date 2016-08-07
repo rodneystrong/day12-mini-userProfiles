@@ -6,8 +6,12 @@ angular
 
     $scope.getUsers = function() {
       $scope.users = mainService.getUsers();
-    }
+    };
 
     $scope.getUsers();
+
+    $scope.toggleFavorite = function() {
+      //$scope. = mainService.toggleFavorite();
+    };
 
 });

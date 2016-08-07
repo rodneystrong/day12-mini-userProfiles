@@ -11,3 +11,7 @@ body {
 .user-list {
   list-style-type: none;
 }
+
+.last {
+  margin-bottom: 20px;
+}

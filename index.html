@@ -10,9 +10,13 @@
     <h1>{{thisAppIsBroken}}</h1>
 
     <div ng-repeat="user in users" class="user-list">
+      <button ng-click="toggleFavorite(user.id)" type="button" name="button">Fav ?</button>
+      <div>
+        <img ng-src="{{user.avatar}}" alt="" />
+      </div>
       <div>{{user.id}}</div>
       <div>{{user.first_name}}</div>
-      <div>{{user.last_name}}</div>
+      <div class="last">{{user.last_name}}</div>
     </div>
 
 

@@ -26,4 +26,8 @@ angular
     this.getUsers = function() {
       return data;
     };
+
+    this.toggleFavorite = function(num) {
+      data[num].isFavorite = !data[num].isFavorite;
+    }
 });
