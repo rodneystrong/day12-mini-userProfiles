@@ -9,7 +9,12 @@
 
     <h1>{{thisAppIsBroken}}</h1>
 
-    {{users}}
+    <ul ng-repeat="user in users" class="user-list">
+      <li>{{user.id}}</li>
+      <li>{{user.first_name}}</li>
+      <li>{{user.last_name}}</li>
+    </ul>
+
 
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
      <script src="app.js"></script>
