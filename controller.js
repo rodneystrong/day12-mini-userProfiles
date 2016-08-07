@@ -4,8 +4,10 @@ angular
 
     $scope.thisAppIsBroken = "This angular app is working";
 
-    $scope.getData = function() {
-      
+    $scope.getUsers = function() {
+      $scope.users = mainService.getUsers();
     }
+
+    $scope.getUsers();
 
 });
