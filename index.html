@@ -8,15 +8,12 @@
 <body ng-controller="MainController">
 
     <h1>{{thisAppIsBroken}}</h1>
-
-    <div ng-repeat="user in users" class="user-list">
+    <div ng-repeat="user in users" ng-class="{favorite: user.isFavorite}" class="user-list">
       <button ng-click="toggleFavorite(user.id)" type="button" name="button">Fav ?</button>
-      <div>
         <img ng-src="{{user.avatar}}" alt="" />
-      </div>
-      <div>{{user.id}}</div>
-      <div>{{user.first_name}}</div>
-      <div class="last">{{user.last_name}}</div>
+      <span>{{user.id}}</span>
+      <span>{{user.first_name}}</span>
+      <span>{{user.last_name}}</span>
     </div>
 
 
