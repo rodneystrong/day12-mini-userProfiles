@@ -1,5 +1,7 @@
 body {
   font-family: futura;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .favorite {
