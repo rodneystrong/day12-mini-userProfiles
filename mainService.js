@@ -29,5 +29,5 @@ angular
 
     this.toggleFavorite = function(num) {
       data[num].isFavorite = !data[num].isFavorite;
-    }
+    };
 });
