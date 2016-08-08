@@ -10,6 +10,8 @@ angular
 
     $scope.getUsers();
 
-    $scope.toggleFavorite = mainService.toggleFavorite;
+    $scope.toggleFavorite = function(num) {
+      mainService.toggleFavorite(num);
+    };
 
 });
