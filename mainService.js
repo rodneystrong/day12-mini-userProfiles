@@ -30,7 +30,7 @@ angular
       return data;
     };
 
-    this.toggleFavorite = function(num) {
-      data[num].isFavorite = !data[num].isFavorite;
+    this.toggleFavorite = function(index) {
+      data[index].isFavorite = !data[index].isFavorite;
     };
 });
