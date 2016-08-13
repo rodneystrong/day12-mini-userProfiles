@@ -12,7 +12,7 @@
   </div>
 
     <div ng-repeat="user in users" ng-class="{favorite: user.isFavorite}">
-      <p><button ng-click="toggleFavorite($index)" type="button" name="button">Fav ??</button>{{user.id}}</p>
+      <p><button ng-click="toggleFavorite(user.id)" type="button" name="button">Fav ??</button>{{user.id}}</p>
       <img ng-src="{{user.avatar}}" />
       <h3>{{user.first_name}} {{user.last_name}}</h3>
     </div>
