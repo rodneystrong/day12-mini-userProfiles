@@ -5,7 +5,7 @@ angular
         "id": 0,
         "first_name": "george",
         "last_name": "bluth",
-        "isFavorite": true,
+
         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
     },
     {
@@ -26,7 +26,9 @@ angular
     }
 
     this.toggleFavorite = function(index) {
+      console.log(data[index].isFavorite);
       data[index].isFavorite = !data[index].isFavorite;
+      console.log(data[index]);
     }
 
   });
